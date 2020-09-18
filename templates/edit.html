@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<form action="{{url_for('edit', task_id=task_id)}}" method="post">
+{{ form.csrf_token }}
+    {{ form.title  (class='title')}}<br>
+    {{ form.blog (class='box') }}
+{{ form.submit (class='edit') }}
+</form>
+{% endblock %}

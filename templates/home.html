@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+        {% for task in tasks %}
+         <div>
+             <h3>{{ task.title }}</h3>
+                <p>{{ task.blog }}</p>
+            <p style="font-size: 10px">created on {{ task.date }}</p>
+            <a class='edit' href="{{ url_for('edit', task_id=task.id) }}">Edit</a>
+            <a class='dlt' href="{{ url_for('delete', task_id=task.id) }}">Delete</a>
+         </div>
+        {% endfor %}
+{% endblock %}
+

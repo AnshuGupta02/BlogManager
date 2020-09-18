@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<form action="{{ url_for('add') }}" method="post"> <!--post doesnt allw rqst but get(default) allow-->
+    {{ form.csrf_token }}
+    <!--form.title.label-->
+    <h3>{{ form.title  (class='title')}}</h3>     <!-- { {ke andr likhna koi class wgrh -->
+    {{ form.blog (class='box')}}
+    {{ form.submit (class='edit')}}
+</form>
+
+{% endblock %}
+
