@@ -12,6 +12,7 @@ app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'secret hai kuchh bhi rkh lo'
 app.config['SQLALCHEMY_DATABASE_URI']= 'sqlite:///data.db'
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 db=SQLAlchemy(app=app)
 

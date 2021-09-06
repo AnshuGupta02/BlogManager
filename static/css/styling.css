@@ -13,6 +13,7 @@ li a:hover{
 
 li:hover{
     background-color: darkgray;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 ul{
     display: flex;
@@ -32,6 +33,7 @@ div{
     margin: 3px;
     padding: 30px;
     background-color: rgba(232, 232, 232, 0.85);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 h3{
     font-size: 25px;
@@ -48,6 +50,8 @@ div p{
     background-color: steelblue;
     border-radius: 4px;
     margin: 7px 2px;
+    cursor: pointer;
+    border-color: steelblue;
 }
 .dlt{
     text-decoration: none;
@@ -56,6 +60,8 @@ div p{
     background-color: red;
     border-radius: 4px;
     margin: 27px 2px;
+    border-color: red;
+    cursor: pointer;
 }
 .box{
     width:80%;

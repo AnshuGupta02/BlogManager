@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 
 {% block main %}
-<form action="{{ url_for('delete', task_id=task_id) }}" method="post" style="background-color: rgba(232, 232, 232, 0.85);">
+<form action="{{ url_for('delete', task_id=task_id) }}" method="post" style="background-color: rgba(232, 232, 232, 0.85); padding: 5px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin: -30px auto 0 auto; width: 500px; text-align: center; ">
 {{ form.csrf_token }}
-    <h2>Are you sure to delete '{{ title }}' blog?</h2>
+    <h2>Are you sure you want to delete blog titled "{{ title }}"?</h2>
     {{ form.delete (class="dlt") }}
 <a role="button" class='edit' href="{{ url_for('home') }}">Cancel</a>
 </form>
